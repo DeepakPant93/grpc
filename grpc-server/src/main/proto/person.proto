@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.grpc.model";
+
+/*
+This is multi line comments
+
+*/
+message Person{
+	// name field
+    string name = 1;
+	// age field
+    int32 age = 2;
+}
