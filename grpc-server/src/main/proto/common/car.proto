@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package common;
+
+option java_multiple_files = true;
+option java_package = "com.grpc.model";
+
+message Car{
+    CarType car_type = 1;
+    string name = 2;
+    bool electric = 3;
+}
+
+enum CarType{
+    SUV = 0;
+    SEDAN = 1;
+    HATCHBACK = 2;
+}
